@@ -1,0 +1,50 @@
+﻿<Window x:Class="MainMenu.Market"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Market" Height="389" Width="466">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="marketTitle" Content="Market" FontSize="24" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label Name="marketTitleName" Content="Name" FontSize="16" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="marketTitleCount" Content="Count" FontSize="16" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="marketTitlePrice" Content="Price" FontSize="16" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label Name="healingPotionSmall" Content="Small healing potion" FontSize="16" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="healingPotionMedium" Content="Medium healing potion" FontSize="16" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="healingPotionLarge" Content="Large healing potion" FontSize="16" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="statPoints" Content="Stat points" FontSize="16" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Button Name="healingPotionSmallHelp" Content="?" FontSize="16" Grid.Column="1" Grid.Row="2" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="healingPotionSmallHelp_Click"/>
+        <Button Name="healingPotionMediumHelp" Content="?" FontSize="16" Grid.Column="1" Grid.Row="3" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="healingPotionMediumHelp_Click"/>
+        <Button Name="healingPotionLargeHelp" Content="?" FontSize="16" Grid.Column="1" Grid.Row="4" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="healingPotionLargeHelp_Click"/>
+        <Button Name="statPointsHelp" Content="?" FontSize="16" Grid.Column="1" Grid.Row="5" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="statPointsHelp_Click"/>
+
+        <TextBox Name="healingPotionSmallCount" Text="0" FontSize="16" Grid.Column="2" Grid.Row="2" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" LostKeyboardFocus="healingPotionSmallCount_LostKeyboardFocus"/>
+        <TextBox Name="healingPotionMediumCount" Text="0" FontSize="16" Grid.Column="2" Grid.Row="3" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" LostKeyboardFocus="healingPotionMediumCount_LostKeyboardFocus"/>
+        <TextBox Name="healingPotionLargeCount" Text="0" FontSize="16" Grid.Column="2" Grid.Row="4" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" LostKeyboardFocus="healingPotionLargeCount_LostKeyboardFocus"/>
+        <TextBox Name="statPointsCount" Text="0" FontSize="16" Grid.Column="2" Grid.Row="5" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" LostKeyboardFocus="statPointsCount_LostKeyboardFocus"/>
+
+        <Label Name="healingPotionSmallPrice" Content="0" FontSize="16" Grid.Column="3" Grid.Row="2" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="healingPotionMediumPrice" Content="0" FontSize="16" Grid.Column="3" Grid.Row="3" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="healingPotionLargePrice" Content="0" FontSize="16" Grid.Column="3" Grid.Row="4" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="statPointsPrice" Content="0" FontSize="16" Grid.Column="3" Grid.Row="5" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Button Name="marketBuy" Content="Buy (0)" FontSize="24" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="marketBuy_Click"/>
+    </Grid>
+</Window>

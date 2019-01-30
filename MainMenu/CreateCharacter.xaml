@@ -1,0 +1,47 @@
+﻿<Window x:Class="MainMenu.CreateCharacter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CreateCharacter" Name="createCharacterForm" Height="389" Width="266">
+    <Grid Name="createCharacterGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Create your character" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Name" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Content="Class" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Grid.Row="3" Grid.Column="0" Content="Strength" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Grid.Row="4" Grid.Column="0" Content="Inteligence" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Grid.Row="5" Grid.Column="0" Content="Luck" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+
+        <Label Name="leftPointsLabel" Grid.Row="0" Grid.Column="3" Content="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="10"></Label>
+        <TextBox Name="characterName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Width="150" Height="50"></TextBox>
+        <ComboBox Name="characterClass" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Width="150" Height="50">
+            <ComboBoxItem Content="Warrior" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"></ComboBoxItem>
+            <ComboBoxItem Content="Wizard" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16"></ComboBoxItem>
+        </ComboBox>
+        <Label Name="countStr" Grid.Row="3" Grid.Column="1" Content="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Name="countInt" Grid.Row="4" Grid.Column="1" Content="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+        <Label Name="countLuck" Grid.Row="5" Grid.Column="1" Content="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"></Label>
+
+        <Button Name="countStrAdd" Grid.Row="3" Grid.Column="2" Content="+" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="1,13,25,13" Click="Button_Click_AddStats"></Button>
+        <Button Name="countStrRemove" Grid.Row="3" Grid.Column="2" Content="-" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="25,13,1,13" Click="Button_Click_AddStats"></Button>
+        <Button Name="countIntAdd" Grid.Row="4" Grid.Column="2" Content="+" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="1,13,25,13" Click="Button_Click_AddStats"></Button>
+        <Button Name="countIntRemove" Grid.Row="4" Grid.Column="2" Content="-" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="25,13,1,13" Click="Button_Click_AddStats"></Button>
+        <Button Name="countLuckAdd" Grid.Row="5" Grid.Column="2" Content="+" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="1,13,25,13" Click="Button_Click_AddStats"></Button>
+        <Button Name="countLuckRemove" Grid.Row="5" Grid.Column="2" Content="-" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="24" Width="24" Margin="25,13,1,13" Click="Button_Click_AddStats"></Button>
+
+        <Button Name="SaveCharacter" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" Content="Create character" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Height="50" Width="250" Click="Button_Click_CreateCharacter"></Button>
+    </Grid>
+</Window>
